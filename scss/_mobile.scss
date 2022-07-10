@@ -1,0 +1,116 @@
+@media (max-width: 1240px) {
+    .header {
+        justify-content: space-around;
+    }
+    footer .container {
+        justify-content: space-around;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .info-row .grid-row {
+        grid-template-columns: minmax(auto, 70%);
+        grid-template-areas:
+            "grid-img"
+            "grid-about";
+        justify-content: center;
+    }
+}
+
+@media (max-width: 960px) {
+    .header {
+        justify-content: space-around;
+    }
+    .info-row .row-for-4 .col-for-4 {
+        flex: 50%;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        p {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+    .ref-companies div {
+        flex: 50%;
+        padding: 0 6rem;
+        padding-top: 2rem;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 9px;
+    }
+    .header {
+        flex-direction: column;
+        .header-nav li {
+            margin: 1rem 0.7rem;
+        }
+    }
+    .main-page {
+        background-position: 60% 50%;
+    }
+
+    .ref-companies div {
+        padding: 0 4rem;
+        padding-top: 2rem;
+    }
+    .contact-form {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 4fr 1fr;
+        .message,
+        .send {
+            grid-column: 1/2;
+        }
+    }
+    .contact-info {
+        grid-template-columns: 1fr;
+        padding: 0;
+        div {
+            padding: 2rem 0;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 8px;
+    }
+    .header .header-nav li a {
+        padding: 0.3rem;
+    }
+    .info-row .row-for-4 .col-for-4 {
+        flex: 100%;
+    }
+    .info-row .grid-row {
+        grid-template-columns: minmax(auto, 90%);
+    }
+    .ref-companies div {
+        flex: 100%;
+        padding: 0 4rem;
+        padding-top: 2rem;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 290px) {
+    .header-nav {
+        flex-direction: column;
+    }
+    .main-page .main-content h1 {
+        font-size: 4rem;
+    }
+}

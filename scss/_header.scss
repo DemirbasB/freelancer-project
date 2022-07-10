@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    img {
+        width: 7.5rem;
+    }
+    .header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            margin: 0 1rem;
+
+            a {
+                color: $color-white;
+                padding: 0.7rem 1rem;
+                border-bottom: 3px solid transparent;
+                transition: all 0.2s;
+                font-weight: 700;
+                &:hover {
+                    border-color: $color-light;
+                }
+                &.active {
+                    border-color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.about__main {
+    background-image: $bg-img;
+    background-position: 0% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
